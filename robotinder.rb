@@ -48,6 +48,11 @@ sleep 1
 element = driver.find_element(:xpath, "//button[contains(.,'Ok, got it!')]").click
 
 # initiate right swiping logic here
+while true
+	# send right arrow key to the driver
+	driver.action.send_keys("\ue014").perform
+	sleep 1
+end
 
 puts driver.title
 
